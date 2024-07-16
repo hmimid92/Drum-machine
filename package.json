@@ -1,5 +1,7 @@
 {
   "name": "drum-machine",
+  "type": "module",
+  "private": true,
   "version": "1.0.0",
   "description": "simple app using React Framework",
   "main": "index.js",
