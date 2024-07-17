@@ -1,8 +1,10 @@
-import React from "https://esm.sh/react";
-import ReactDOM from "https://esm.sh/react-dom/client";
-import { useState, useEffect, useRef } from "https://esm.sh/react";
-import { FontAwesomeIcon } from "https://esm.sh/@fortawesome/react-fontawesome@latest";
-import { faFreeCodeCamp } from "https://esm.sh/@fortawesome/free-brands-svg-icons";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons";
+import "./styles.scss";
+
 
 const DrumMachine = () => {
   const [power, setPower] = useState(true);
@@ -163,7 +165,7 @@ const DrumMachine = () => {
   return (
     <div
       id="drum-machine"
-      className="container d-flex flex-column pb-2 bg-success my-3 border border-danger border-3"
+      className="container d-flex flex-column pb-2 bg-success mt-4 border border-danger border-3"
     >
       <div className="title text-end mb-2 fw-bolder">
         FCC
