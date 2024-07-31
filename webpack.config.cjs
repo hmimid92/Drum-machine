@@ -23,11 +23,8 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'index.html',
+            template: './dist/index.html',
         }),
-
-        // Add your plugins here
-        // Learn more about plugins from https://webpack.js.org/configuration/plugins/
     ],
     module: {
         rules: [
@@ -36,10 +33,8 @@ const config = {
                 loader: 'babel-loader',
             },
             {
-                test: /\.s[ac]ss$/i,
-                use: [stylesHandler,
-                    "css-loader",
-                    "sass-loader",],
+                test: /\.scss$/i,
+                use: [stylesHandler, 'css-loader', 'sass-loader'],
             },
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,

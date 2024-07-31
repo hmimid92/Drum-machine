@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFreeCodeCamp } from "@fortawesome/free-brands-svg-icons";
-import "./styles.scss";
+import "./styles.scss"; 
 
 
 const DrumMachine = () => {
